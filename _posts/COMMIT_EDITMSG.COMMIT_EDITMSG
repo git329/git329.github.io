@@ -1,0 +1,66 @@
+add git blog refer.
+
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/_posts/2018-05-07-AngularJS-Install.md b/_posts/2018-05-07-AngularJS-Install.md
+new file mode 100644
+index 0000000..3fa3b99
+--- /dev/null
++++ b/_posts/2018-05-07-AngularJS-Install.md
+@@ -0,0 +1,39 @@
++---
++layout: post
++title: "AngularJS 学习小记1"
++category: articles
++tags: [java]
++comments: true
++---
++
++Install on Ubuntu
++==============
++Refer to : <>
++####Install NodeJs
++
++Download from : https://nodejs.org/en/download/
++
++```
++tar xJfv node-v8.11.1-linux-x64.tar.xz
++$ sudo ln -s /home/tiayin/Downloads/node-v8.11.1-linux-x64/bin/npm /usr/local/bin/npm
++$ sudo ln -s /home/tiayin/Downloads/node-v8.11.1-linux-x64/bin/npx /usr/local/bin/npx
++$ sudo ln -s /home/tiayin/Downloads/node-v8.11.1-linux-x64/bin/node /usr/local/bin/node
++```
++检查安装
++```
++$ node -v
++v8.11.1
++```
++
++####Config proxy for NPM
++
++```
++$ npm config set proxy http://87.254.212.121:8080
++$ npm config set https-proxy http://87.254.212.121:8080
++
++```
++
++###Config NG to the path if need
++```
++$ sudo ln -s /home/tiayin/Downloads/node-v8.11.1-linux-x64/lib/node_modules/@angular/cli/bin/ng /usr/local/bin/ng
++```
+\ No newline at end of file
+diff --git a/_posts/github-tips.md b/_posts/github-tips.md
+index a447b99..fcd8a90 100644
+--- a/_posts/github-tips.md
++++ b/_posts/github-tips.md
+@@ -5,4 +5,6 @@ git add sublime-tips.md 2018-04-10-Python-Study-Tips.md
+ git commit -m "add 2 files"
+ git remote add origin https://github.com/git329/Learn.git  首次使用，需要添加哈。
+ git push origin source
+-```
+\ No newline at end of file
++```
++
++Refer to <https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B>
+\ No newline at end of file
